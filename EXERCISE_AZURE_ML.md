@@ -109,24 +109,15 @@ Optional, free: compare against the local baseline
 (`python3 train_regression.py` prints a plain linear regression R² for each
 scenario).
 
-## Step 5 - Answer and submit
+## Step 5 - Submit 3 things
 
-Submit a one-page write-up with the two screenshots:
-
-1. Which scenario did you pick, and what R² did AutoML reach?
-2. Which features drive your scenario's risk the most? Does that match the
-   story in the table above?
-3. Read your R² as a "probability model": for a hypothetical flagship
-   (`release_days_since_2023=1000`, `benchmark_score=95`, `agentic_score=85`,
-   `compute_log10_flops=26.8`, `open_weights=0`) roughly what risk would you
-   expect from your model, using the feature importances and the data ranges?
-   (No endpoint needed; estimate from the data.)
-4. Students who picked `climate_tipping_cascade` will see a low R². Why? (Hint:
-   look at what the AI capability features have to do with climate.)
-5. **Data leakage:** each of the 42 fake models appears 4 times with small
-   jitter. Why might cross-validation scores look better than they should?
-6. Why is this fake-data score not a real probability of anything, even if R²
-   is 0.9?
+1. **Screenshot of the Models tab** showing your best model and its R².
+2. **Screenshot of the Explanations tab** showing the most important features.
+3. **A short answer (3-5 sentences):**
+   - Which scenario did you pick, and which features drive its risk the most?
+   - Does that match the story in the Step 0 table?
+   - Why shouldn't this score be trusted as a real probability, even if R² is
+     high? (Hint: look at where the data came from.)
 
 ## Cleanup checklist
 
