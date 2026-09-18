@@ -4,11 +4,17 @@
 `apocalypse_risk_fake_data.csv` is made up (see [README.md](README.md)). This is
 an exercise in using Azure Machine Learning, not a real risk assessment.
 
-## Goal
+## Goals
 
-Use Azure ML **automated ML (AutoML)** to train a regression model that
-predicts the **risk of one civilization-ending scenario** (a 0-100 score you
-can read as a probability in %) from a model's capabilities.
+By the end of this exercise you will be able to:
+
+1. **Build a prediction model without writing code.** Use Azure ML AutoML to
+   train a regression model that predicts one risk score (0-100, read as a
+   probability in %) from a model's capabilities.
+2. **Explain what the model learned.** Read the R² score and the feature
+   importance chart to say which inputs drive the prediction.
+3. **Use AI responsibly.** Run cloud jobs with a cost limit, and judge how much
+   to trust a model trained on data like this (it is fake).
 
 ## Cost rule: every run is capped at 15 minutes
 
