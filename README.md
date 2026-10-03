@@ -147,6 +147,9 @@ With 210 rows and a 30% test split:
 | autonomous_weapons_spiral | 0.88 | 5.07 |
 | epistemic_collapse | 0.90 | 5.34 |
 
+
+## How about how is it going to improve the world
+
 `climate_tipping_cascade` fits noticeably worse than the others — that's by
 design. Its generating weights (below) put almost no emphasis on any AI
 capability feature, so a model trying to predict it from AI features alone
